@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+:root{
+    --main-bg-color:#2874f0;
+    --main-text-color:white;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #b9d4ff;
+}
+header{
+    height:60px ;
+    background-color: var(--main-bg-color);
+    font-family: 'Lato', sans-serif;
+}
+nav{
+    display: flex;
+    
+}
+.logo{
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+.logo img{
+    height: 40px;
+    
+}
+
+nav ul{
+    height: 60px;
+    display: flex;
+    align-items: center;
+
+}
+nav ul li{
+    list-style: none;
+    padding: 0px 20px;
+
+}
+nav ul li a{
+    text-decoration: none;
+    text-transform: uppercase; 
+    color: var(--main-text-color);
+    font-weight: bold;
+    
+}
+nav ul li a:hover{
+    color: #bed4f6;
+}
+.container{
+    min-height: calc(100vh - 60px - 8vh);
+    background-color: rgb(207, 225, 241);
+}
+
+.search input{
+    width: 27vw;
+    height: 30px;
+    border-radius: 5px;
+    margin: 0px 22px 0px 0px;
+    padding-left: 12px;
+    
+}
+.search{
+    display: flex;
+    align-items: center;
+}
+.btn{
+    padding: 6px 12px;
+    border: 2px solid white;
+    color: var(--main-text-color);
+    font-weight: bold;
+    text-transform: capitalize;
+    background-color: var(--main-bg-color);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.search button{
+    font-family: 'Lato', sans-serif;
+}
+/* this one is to create a slider */
+.slider{
+    margin-top: 10px 0px 10px 0px ;
+    display: flex;
+    overflow: hidden;
+    width:100vw ;
+}
+.slider img{
+    width: 100%;
+    height:40vh;
+}
+@keyframes slider1 {
+    0%{
+        transform: translate(0%);
+    }
+    25%{
+        transform: translate(-100vw);
+    }
+    50%{
+        transform: translate(-200vw);
+    }
+    75%{
+        transform: translate(-300vw);
+    }
+    100%{
+        transform: translate(-400vw);
+    }
+}
+
+.image1{
+    animation: slider1 10s infinite ;
+}
+
+.image2{
+    animation: slider1 10s infinite;
+}
+
+.image3{
+    animation: slider1 10s infinite;
+}
+
+.image4{
+    animation: slider1 10s infinite;
+}
+
+.image5{    
+    animation: slider1 10s infinite;
+}
+
+
+.card-heading{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 45px;
+}
+.card{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+
+}
+.card-item{
+    background-color:white;
+    display: flex;
+    width: 150PX;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 14px; 
+}
+
+.card-item img:hover{
+    transform: scale(1.03);
+}
+
+.card-item img{
+    border-radius: 8px;
+}
+
+
+.container1{
+    background-color:white;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    font-family: 'Lato', sans-serif;
+}
+
+.head-item{
+    /* background-color: green; */
+    margin: 9px 21px;
+    text-align: center; 
+}
+.head-item img{
+    height: 9vh;
+}
+.head-item img:hover{
+    transform: scale(1.05);
+}
+
+.container2{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    /* overflow: hidden; */
+    
+}
+.imges-card img{
+    margin: 2px;
+}
+.services{
+    display: flex;
+    justify-content: center;
+}
+
+.services img{
+    width: 24%;
+    margin: 5px;
+}
+
+.lines{
+    text-align: center;
+}
+
+/* for the footer black section */
+
+.footer1{
+    background-color: #172337;
+    color: #ffffff;
+    display: flex;
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: 13px;
+    /* justify-content: center; */
+}
+h4{
+    color: #878787;
+    margin: 10px 0px;
+
+}
+.row{
+    display: flex;
+    justify-content: center;
+}
+
+.column{
+    padding: 30px;
+    margin: 2px 20px;
+}
+.column ul li{
+    list-style: none;
+}
+.border1{
+    /* background-color: yellow; */
+    padding-right: 100px;
+    
+}
+.border2{
+    border: 3px solid white;
+    padding-left: 30px;
+    border-top: 0px;
+    border-bottom: 0px;
+    border-right: 0px;
+}
+.footer1 ul li:hover{
+    text-decoration: underline;
+    cursor: default;
+}
+footer{
+    align-items: center;
+    background-color: var(--main-bg-color);
+    color: var(--main-text-color);
+    height: 8vh;
+    font-family: 'Lato', sans-serif;
+
+}
